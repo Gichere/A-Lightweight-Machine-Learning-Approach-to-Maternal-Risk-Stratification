@@ -7,6 +7,10 @@ By employing interpretable models—logistic regression and decision trees—thi
 
 The POC demonstrates how data science can transform maternal healthcare by automating risk assessment and integrating with hospital ticketing systems. The code is implemented in R, using a public maternal health dataset from the UCI Machine Learning Repository.
 
+[Decision Tree Flow Chart](https://github.com/Gichere/A-Lightweight-Machine-Learning-Approach-to-Maternal-Risk-Stratification/blob/main/decision_tree.png)
+
+[Logistic Regression Coefficients](https://github.com/Gichere/A-Lightweight-Machine-Learning-Approach-to-Maternal-Risk-Stratification/blob/main/logistic_feature_importance.png)
+
 ## Dataset
 The dataset used is the Maternal Health Risk Data Set from the UCI Machine Learning Repository. It contains 1,014 patient records with the following features:
 
@@ -90,12 +94,18 @@ Logistic Regression:
 - Precision: 80%
 - AUC: 0.83
 
+[Logistic Regression Coefficients](https://github.com/Gichere/A-Lightweight-Machine-Learning-Approach-to-Maternal-Risk-Stratification/blob/main/logistic_feature_importance.png)
 
 Decision Tree:
 - Recall: 70%
 - Precision: 92%
 - AUC: 0.797
+  
+[Decision Tree Flow Chart](https://github.com/Gichere/A-Lightweight-Machine-Learning-Approach-to-Maternal-Risk-Stratification/blob/main/decision_tree.png)
 
+Combine ROC Curve:
+
+[AUC ROC Curve](https://github.com/Gichere/A-Lightweight-Machine-Learning-Approach-to-Maternal-Risk-Stratification/blob/main/roc_curve.png)
 
 Blood sugar and blood pressure were the strongest predictors, aligning with clinical knowledge of gestational diabetes and hypertension as key risk factors.
 
