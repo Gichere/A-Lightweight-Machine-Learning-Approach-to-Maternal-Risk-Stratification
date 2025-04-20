@@ -9,7 +9,7 @@ The POC demonstrates how data science can transform maternal healthcare by autom
 
 ![Decision Tree Flow Chart](https://github.com/Gichere/A-Lightweight-Machine-Learning-Approach-to-Maternal-Risk-Stratification/blob/main/decision_tree.png)
 
-[Logistic Regression Coefficients](https://github.com/Gichere/A-Lightweight-Machine-Learning-Approach-to-Maternal-Risk-Stratification/blob/main/logistic_feature_importance.png)
+![Logistic Regression Coefficients](https://github.com/Gichere/A-Lightweight-Machine-Learning-Approach-to-Maternal-Risk-Stratification/blob/main/logistic_feature_importance.png)
 
 ## Dataset
 The dataset used is the Maternal Health Risk Data Set from the UCI Machine Learning Repository. It contains 1,014 patient records with the following features:
@@ -19,15 +19,15 @@ The dataset used is the Maternal Health Risk Data Set from the UCI Machine Learn
 - BS: Blood sugar level (mmol/L)
 - BodyTemp: Body temperature (°F)
 - HeartRate: Heart rate (bpm)
-- RiskLevel: Categorized as low, mid, or high risk
+- RiskLevel: Categorised as low, mid, or high risk
 
-For modeling, RiskLevel was recoded into a binary variable (0 = low risk, 1 = medium/high risk). The dataset has no missing values, and continuous features were normalized for model stability.
+For modeling, RiskLevel was recoded into a binary variable (0 = low risk, 1 = medium/high risk). The dataset has no missing values, and continuous features were normalised for model stability.
 
 ## Repository Structure
-The repository is organized as follows:
+The repository is organised as follows:
 
 - data/: Contains the UCI dataset (Maternal Health Risk Data Set.csv)
-- scripts/: Contains the main R script (maternal_risk_model.R) for data preprocessing, modeling, and evaluation
+- scripts/: Contains the main R script (maternal_risk_model.R) for data preprocessing, modelling, and evaluation
 - outputs/: Contains visualizations (roc_curve.png, feature_importance.png, decision_tree_plot.png)
 - README.md: This file
 - LICENSE: MIT License
@@ -80,9 +80,9 @@ To run the code, ensure you have R (version 4.0 or higher) installed. Follow the
 ## Methodology
 The project focuses on building a POC to demonstrate feasibility in resource-constrained settings. Key methodological choices include:
 
-- Skipped EDA: Exploratory Data Analysis was omitted to prioritize rapid POC development, given the dataset's cleanliness (no missing values). Future work should include EDA to explore feature distributions and correlations.
-- Logistic Regression Assumptions: Assumptions (e.g., linearity of log-odds, no multicollinearity) were not formally checked to maintain simplicity. Normalization and dataset integrity mitigate some risks, but future iterations should validate these assumptions.
-- Models: Logistic regression and decision trees were chosen for interpretability, critical for clinical adoption. Logistic regression prioritizes recall (76%), while the decision tree offers high precision (92%).
+- Skipped EDA: Exploratory Data Analysis was omitted to prioritise rapid POC development, given the dataset's cleanliness (no missing values). Future work should include EDA to explore feature distributions and correlations.
+- Logistic Regression Assumptions: Assumptions (e.g., linearity of log-odds, no multicollinearity) were not formally checked to maintain simplicity. Normalisation and dataset integrity mitigate some risks, but future iterations should validate these assumptions.
+- Models: Logistic regression and decision trees were chosen for interpretability, critical for clinical adoption. Logistic regression prioritises recall (76%), while the decision tree offers high precision (92%).
 
 For detailed results, see the accompanying article: [Saving Mothers with Data Science: A Lightweight Machine Learning Approach to Maternal Risk Stratification](https://francisgichere.medium.com/saving-mothers-with-data-science-a-lightweight-machine-learning-approach-to-maternal-risk-013bdf47e6c9)
 
@@ -94,18 +94,18 @@ Logistic Regression:
 - Precision: 80%
 - AUC: 0.83
 
-[Logistic Regression Coefficients](https://github.com/Gichere/A-Lightweight-Machine-Learning-Approach-to-Maternal-Risk-Stratification/blob/main/logistic_feature_importance.png)
+![Logistic Regression Coefficients](https://github.com/Gichere/A-Lightweight-Machine-Learning-Approach-to-Maternal-Risk-Stratification/blob/main/logistic_feature_importance.png)
 
 Decision Tree:
 - Recall: 70%
 - Precision: 92%
 - AUC: 0.797
   
-[Decision Tree Flow Chart](https://github.com/Gichere/A-Lightweight-Machine-Learning-Approach-to-Maternal-Risk-Stratification/blob/main/decision_tree.png)
+![Decision Tree Flow Chart](https://github.com/Gichere/A-Lightweight-Machine-Learning-Approach-to-Maternal-Risk-Stratification/blob/main/decision_tree.png)
 
 Combine ROC Curve:
 
-[AUC ROC Curve](https://github.com/Gichere/A-Lightweight-Machine-Learning-Approach-to-Maternal-Risk-Stratification/blob/main/roc_curve.png)
+![AUC ROC Curve](https://github.com/Gichere/A-Lightweight-Machine-Learning-Approach-to-Maternal-Risk-Stratification/blob/main/roc_curve.png)
 
 Blood sugar and blood pressure were the strongest predictors, aligning with clinical knowledge of gestational diabetes and hypertension as key risk factors.
 
