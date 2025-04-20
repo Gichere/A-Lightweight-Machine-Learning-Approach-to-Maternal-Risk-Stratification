@@ -7,7 +7,7 @@ By employing interpretable models—logistic regression and decision trees—thi
 
 The POC demonstrates how data science can transform maternal healthcare by automating risk assessment and integrating with hospital ticketing systems. The code is implemented in R, using a public maternal health dataset from the UCI Machine Learning Repository.
 
-[Decision Tree Flow Chart](https://github.com/Gichere/A-Lightweight-Machine-Learning-Approach-to-Maternal-Risk-Stratification/blob/main/decision_tree.png)
+![Decision Tree Flow Chart](https://github.com/Gichere/A-Lightweight-Machine-Learning-Approach-to-Maternal-Risk-Stratification/blob/main/decision_tree.png)
 
 [Logistic Regression Coefficients](https://github.com/Gichere/A-Lightweight-Machine-Learning-Approach-to-Maternal-Risk-Stratification/blob/main/logistic_feature_importance.png)
 
